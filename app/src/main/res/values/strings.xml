@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Comparateur De Prénoms</string>
+    <string name="labelPrenoms">Quels prénoms voulez-vous comparer?</string>
+    <string name="prenom1">Prénom 1</string>
+    <string name="prenom2">Prénom 2</string>
+    <string name="imgDescription">symbole check</string>
+    <string name="ResultActivityName">Résultat</string>
+    <string name="labelResult">Après des calculs très compliqués\n qui ont privé de sommeil\nde nombreux scientifiques,\nvoici le taux de compatibilité\ndes prénoms choisis :</string>
+    <string name="verdict">Verdict :</string>
+    <string name="resultPictureDescription">Image résultat</string>
+    <string name="pourcentage">Pourcentage</string>
+    <string name="HomeTitle">Comparateur de Prénoms</string>
+    <string name="oubliPrenom">Saisissez un prénom!</string>
+</resources>

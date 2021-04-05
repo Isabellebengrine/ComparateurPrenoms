@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelResult"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+    <TextView
+        android:id="@+id/labelCalcul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pourcentage"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelResult"
+         />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelCalcul"/>
+
+    <TextView
+        android:id="@+id/labelVerdict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verdict"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/resultPictureDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelVerdict"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
